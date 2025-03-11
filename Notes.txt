@@ -1,0 +1,50 @@
+7 commands to level up your workflow today!
+
+1. fzf
+
+Fuzzy find string matches
+1. Search through your cmd history with Ctrl+R
+2. Search files with Alt+c
+For when you don't know the exact string to search for
+
+2. rg
+
+Search the contents of your files
+1. Find text patterns (exact/regex) in all the files in your directory
+2. Extremely fast
+
+3. Text editor: vim/nano
+
+Most servers have one of these.
+1. Vim: a/i to enter append/insert mode and Esc and :wq to write-quit
+2. Nano: Ctrl + O -> Save & Ctrl + X -> Exit
+Know the basics, it'll save time when you need to edit a file on a server
+
+4. aliases
+
+Writing the same cmd multiple times? create aliases
+1. Create aliases in your profile file ~/.zshrc or ~/.bash_profile
+E.g., I use ae to activate a virtual env.
+
+> alias ae='source env/bin/activate'
+
+5. uv
+
+Extremely fast Python package manager
+1. Prefix it to existing pip commands, e.g., uv pip install
+2. Simple way to set up a Python project
+
+6. ruff
+
+Extremely fast lint and format
+1. Check bugs and bad practices with a ruff check
+2. Format your code with ruff format
+
+7. duckdb cli
+
+duckdb can read from stdin and write to stdout
+1. Run sql on files directly from cli
+
+E.g.
+
+cat test.csv | duckdb -c "SELECT * FROM read_csv('/dev/stdin')"
